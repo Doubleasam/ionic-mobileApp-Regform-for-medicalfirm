@@ -1,1 +1,23 @@
+<ion-menu side="right" [content]="content">
+	<ion-header>
+		<ion-toolbar>
+			<ion-title>
+				side Menu
+			</ion-title>
+		</ion-toolbar>
+	</ion-header>
+
+	<ion-content>
+		<ion-list>
+			<ion-item (click)="goabout()">
+				About
+			</ion-item>
+			<ion-item (click)="gocontact()">
+				Contact Us
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-menu>
+
+
 <ion-nav [root]="rootPage"></ion-nav>

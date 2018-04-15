@@ -1,0 +1,76 @@
+<!-- <ion-header>
+    <ion-buttons start>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-buttons>
+</ion-header>
+ -->
+<ion-header>
+<ion-navbar>
+    <ion-buttons left>
+        <button ion-button icon-only (click)= "viewCtrl.dismiss()" class="my-style-for-modal">Go Back
+        </button>
+    </ion-buttons>
+</ion-navbar>
+</ion-header>
+
+<ion-content class="background">
+<div class="relative z-hi text-center"><img src="assets/logo.png" height="54">
+    <ion-card>
+        <ion-card-header>
+            Registeration Form
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list no-line>
+                <ion-item>
+                    <ion-input type="text" placeholder="Nationality"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" placeholder="State Of Residence"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" placeholder="Residence Address"></ion-input>
+                </ion-item>
+                <ion-row>
+            <ion-col col-6>
+                 <ion-item>
+                        <ion-input type="text" placeholder="Email"></ion-input>
+                </ion-item>
+            </ion-col>
+        
+            <ion-col col-6>
+                 <ion-item>
+                    <ion-input type="text" placeholder="phone"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-5>
+                 <ion-item>
+                        <ion-label color="whity"> Gender </ion-label>
+                     <ion-select [(ngModel)]="gender">
+                        <ion-option value="M">Male</ion-option>
+                         <ion-option value="F">Female</ion-option>
+                        </ion-select>
+                </ion-item>
+            </ion-col>
+        
+            <ion-col col-7>
+                 <ion-item>
+                    <ion-label color="whity"> Date Of Birth </ion-label>
+                    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate">
+                </ion-datetime>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+                
+            <button ion-button block outline color="light">Register</button>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+    <button class="bottom" ion-button clear full color="light" (click) = "login()">Already have an account? Login</button>
+</div>
+</ion-content>
+2056786062
